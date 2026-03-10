@@ -1,31 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>koff0006 midterm</title>
 </head>
-
 <body>
+     <!-- Connects the HTML file to the CSS file -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <!--
+    WRAPPER:    This div is the main "box" that holds the entire website.   -->
+  <div class="wrapper">
 
-    <header>
-        <div class="banner">
-            <h1>cobs bread</h1>
-        </div>
+    <!--      HEADER STAGE:
+      In the prototype, there is a big image at the top with the title on top.
+      We create a "stage" with position: relative.    -->
+    <header class="stage" id="home">
+
+  
+      <img class="header-img" src="images/Husky 1.jpg" alt="this image shows a husky running through the yellow flowers">
+      
+      <!--  The main title of the site.-->
+     
+      <h1 class="site-title">Husky</h1>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic dolorem, ex, incidunt facere
-                totam iure cum rerum accusantium illo, odit quis quibusdam! Ratione, porro! Possimus perferendis
-                mollitia tempora nam?</p>
-        </section>
 
+    <!--      NAVIGATION:      This is the menu with 3 items  -->
+    <nav>
+      <ul>
+        <!-- These are "jump links" that move the page to a section -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+        <main>
 
+      <!--
+        The image should have the text wrapping around it.     -->
+      <section class="clearfix" id="story">
+        <h2>Life of a HUSKY</h2>
+        <img class="img" src="images/Husky2.jpg" alt="Sea turtle swimming in the ocean">
+         <!-- Clear, explanatory text -->
+        <p>
+          Sea turtles have spent millions of years in Earth's oceans because they exist as marine reptiles. They spend their life underwater but require surface swimming to breathe. Sea turtles need to travel long distances because they search for food and return to their nesting sites.
+        </p>
 
-    </main>
+        <p>
+          Sea turtles play an important role in ocean ecosystems. Some species of turtles help maintain healthy seagrass beds while other species protect the balance of marine food chains. Their movement across various ocean regions enables them to improve the ecological health of multiple marine environments.
+        </p>
+
+        <p>
+          Today, sea turtles face many threats which include plastic pollution and fishing nets and habitat loss and climate change. The study of sea turtles enables people to comprehend the importance of ocean conservation.
+        </p>
+      </section>
+      <!--
+        FACTS SECTION:
+        That means we must use an actual <ul> list with <li> items.
+      -->
+      <section>
+        <h2>Facts About Sea Turtles</h2>
+
+        <ul>
+          <li>Sea turtles breathe air, so they must surface regularly.</li>
+          <li>They can migrate thousands of kilometers between feeding and nesting areas.</li>
+          <li>Many sea turtles return to the same beaches where they were born to lay eggs.</li>
+          <li>Plastic is dangerous because turtles may confuse it with jellyfish.</li>
+        </ul>
+      </section>
+
+      <!--
+        CONTACT SECTION: label "for" must match input "id".
+      -->
+      <section id="contact">
+        <h2>Contact to learn more</h2>
+
+        <form class="contact-box" action="#" method="post">
+
+          <!-- Name field -->
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text">
+
+          <!-- Email field -->
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email">
+          <!-- Message field -->
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <!--
+            Radio question:
+            This keeps the same style as the mockup (Yes / No / Maybe).
+          -->
+          <p class="question">Would you like to learn more about sea turtle conservation?</p>
+
+          <label for="yes">
+            <input id="yes" type="radio" name="learn" value="yes">
+            Yes
+          </label>
+          <label for="no">
+            <input id="no" type="radio" name="learn" value="no">
+            No
+          </label>
+
+          <label for="maybe">
+            <input id="maybe" type="radio" name="learn" value="maybe">
+            Maybe
+          </label>
+
+          <!-- Submit button -->
+          <div class="btn-row">
+            <button type="submit">Send</button>
+          </div>
+
+        </form>
+      </section>
+      </main>
+
+    <!--
+      FOOTER:
+      We keep it simple like the prototype and align it to the right.
+    -->
+    <footer>
+      <p>&copy; Sea Turtle.</p>
+    </footer>
+
+  </div>
 </body>
-
+</html>
+    
+</body>
 </html>
