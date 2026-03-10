@@ -89,7 +89,7 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: white;
 }
 
 /* Main spacing like the mockup */
@@ -162,12 +162,12 @@ textarea {
 button {
   padding: 6px 14px;
   border: 1px solid #111;
-  background-color: #cfe7e6;
+  background-color: #51ddd9;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #bfe0de;
+  background-color: #74bbb6;
 }
 
 
