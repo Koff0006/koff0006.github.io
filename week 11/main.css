@@ -1,0 +1,46 @@
+.box{
+    background-color: antiquewhite;
+    padding:2rem;
+    border-radius: 1rem;
+}
+
+.grid-container{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr; */
+    /*grid-template-colums: 1fr 1fr fr; */
+    /* three colums: 200px, 500px, and 1fr */
+    /*grid-template-columns: 200px 500px 1fr;*/
+    /*create two */
+    /*grid-template-rows: 200px 200px;*/
+    grid-template-columns: 1fr;
+    gap: 1rem 2rem
+
+    row-gap: 1rem;
+    column-gap: 2rem;
+    /* one value = for row and colums
+    two values = first for the row and second for the column */
+
+
+
+
+  
+
+    
+}
+
+@media screen and (min-width:600px){
+.grid-container1
+grid-template-columns: 1fr 1fr;
+
+
+
+
+@media screen and(min-width:600px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+

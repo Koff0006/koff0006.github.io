@@ -1,0 +1,31 @@
+html{
+    font-size:14px;
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5 rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.bigger_viewport{
+    display: none;
+}
+
+.learn{
+    background-color:aqua;
+    padding: 1rem;
+}
+
+1frame{
+    width: 100;
+}
+
+@media screen and(min-width:700px) {html
